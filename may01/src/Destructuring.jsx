@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Destructuring({name,age,city,degree,contact}) {
+export default function Destructuring({user,name,age,city,degree,contact}) {
   return (
     <div>
         {/* <p>{props.name1} , {props.age1} , {props.city1}</p>
@@ -8,9 +8,9 @@ export default function Destructuring({name,age,city,degree,contact}) {
         <p>{props.name3} , {props.age3} , {props.city3}</p>
         <p>{props.name4} , {props.age4} , {props.city4}</p>
         <p>{props.name5} , {props.age5} , {props.city5}</p> */}
-        {name} , {age} , {city} , {degree} , {contact}
+        {user} - {name} , {age} , {city} , {degree} , {contact}
 
-        
+
 
     </div>
   )
