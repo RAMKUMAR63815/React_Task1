@@ -1,5 +1,6 @@
 import React from 'react'
 import Destructuring from './Destructuring'
+import Conditionalrendering from './Conditionalrendering'
 
 export default function App() {
   const user1 ="User 1"
@@ -42,11 +43,12 @@ export default function App() {
 
   return (
     <div>
-      <Destructuring  user={user1} name={name1} age={age1} city={city1} degree={degree1}  contact={contact1}/>
+      {/* <Destructuring  user={user1} name={name1} age={age1} city={city1} degree={degree1}  contact={contact1}/>
       <Destructuring  user={user2} name={name2} age={age2} city={city2} degree={degree2}  contact={contact2}/>
       <Destructuring  user={user3} name={name3} age={age3} city={city3} degree={degree3}  contact={contact3}/>
       <Destructuring  user={user4} name={name4} age={age4} city={city4} degree={degree4}  contact={contact4}/>
-      <Destructuring  user={user5} name={name5} age={age5} city={city5} degree={degree5}  contact={contact5}/>
+      <Destructuring  user={user5} name={name5} age={age5} city={city5} degree={degree5}  contact={contact5}/> */}
+      <Conditionalrendering />
       
     </div>
   )
