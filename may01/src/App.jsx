@@ -1,6 +1,9 @@
 import React from 'react'
 import Destructuring from './Destructuring'
 import Conditionalrendering from './Conditionalrendering'
+import Modulesstyle from './Modulesstyle'
+import ObjectStyle from './ObjectStyle'
+import Countertheme from './Countertheme'
 
 export default function App() {
   const user1 ="User 1"
@@ -48,8 +51,12 @@ export default function App() {
       <Destructuring  user={user3} name={name3} age={age3} city={city3} degree={degree3}  contact={contact3}/>
       <Destructuring  user={user4} name={name4} age={age4} city={city4} degree={degree4}  contact={contact4}/>
       <Destructuring  user={user5} name={name5} age={age5} city={city5} degree={degree5}  contact={contact5}/> */}
-      <Conditionalrendering />
-      
+      {/* <Conditionalrendering /> */}
+      {/* <Modulesstyle /> */}
+      {/* <ObjectStyle /> */}
+      <Countertheme />
+
+    
     </div>
   )
 }
