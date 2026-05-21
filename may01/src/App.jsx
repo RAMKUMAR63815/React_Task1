@@ -4,6 +4,9 @@ import Conditionalrendering from './Conditionalrendering'
 import Modulesstyle from './Modulesstyle'
 import ObjectStyle from './ObjectStyle'
 import Countertheme from './Countertheme'
+import ConditonalForm from './ConditonalForm'
+import Useeffect from './Useeffect'
+
 
 export default function App() {
   const user1 ="User 1"
@@ -54,7 +57,10 @@ export default function App() {
       {/* <Conditionalrendering /> */}
       {/* <Modulesstyle /> */}
       {/* <ObjectStyle /> */}
-      <Countertheme />
+      {/* <Countertheme /> */}
+      {/* <ConditonalForm /> */}
+      <Useeffect />
+    
 
     
     </div>
