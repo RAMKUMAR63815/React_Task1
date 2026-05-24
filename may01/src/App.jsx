@@ -6,7 +6,9 @@ import ObjectStyle from './ObjectStyle'
 import Countertheme from './Countertheme'
 import ConditonalForm from './ConditonalForm'
 import Useeffect from './Useeffect'
-
+import Useref from './Useref'
+import First from './First'
+import Caption from './Caption'
 
 export default function App() {
   const user1 ="User 1"
@@ -59,10 +61,13 @@ export default function App() {
       {/* <ObjectStyle /> */}
       {/* <Countertheme /> */}
       {/* <ConditonalForm /> */}
-      <Useeffect />
-    
-
-    
+      {/* <Useeffect /> */}
+      {/* < Useref/> */}
+      {/* <div style={{ padding: "20px", border: "2px solid #333" }}>
+        <h2>Main component {user1}</h2>
+        <First user1 ={user1}/></div> */}
+        <Caption />
+     
     </div>
   )
 }
