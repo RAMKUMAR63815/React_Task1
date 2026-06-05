@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
 import Destructuring from './Destructuring'
 import Conditionalrendering from './Conditionalrendering'
 import Modulesstyle from './Modulesstyle'
@@ -9,6 +10,39 @@ import Useeffect from './Useeffect'
 import Useref from './Useref'
 import First from './First'
 import Caption from './Caption'
+import ContextForm from './ContextForm'
+import Usereduce from './Usereduce'
+import Minichat from './Minichat'
+import Chat from './Chat'
+import Navbar from './Navbar'
+import Dashboard from './Dashboard'
+import Team from './Team'
+import Contact from './Contact'
+import Account from './Account'
+import Solutions from './Solutions'
+import CloudService from './CloudService'
+import CyberSecurity from './CyberSecurity'
+import AIService from './AIService'
+import Home from './component/Home'
+import About from './component/About'
+import Services from './component/Services'
+// import Contact from './component/Contact'
+import Appservices from './component/Appservices'
+import Webservice from './component/Webservice'
+import Idname from './Idname'
+import Blog from './component/Blog'
+import UserList from './component/UserList'
+import UserDetails from './component/UserDetails'
+import TaskTwele from './TaskTwele'
+import UseSerachParam from './UseSerachParam'
+import Pagenation from './Pagenation'
+import Apifetch from './Apifetch'
+import Useexecute from './Useexecute'
+import Axios from "./Axios"
+import UserTable from "./UserTable"
+import Crud from './Crud'
+import ApiCrud from './ApiCrud'
+export const Pass = createContext();
 
 export default function App() {
   const user1 ="User 1"
@@ -47,6 +81,24 @@ export default function App() {
   const city5="Puducherry"
   const degree5="B.Sc"
   const contact5="9344255766"
+   
+ 
+  const [mode,setmode]= useState("light");
+
+  const [form,setform] =useState({
+    name :"",
+    email:"",
+    phone:"",
+    password: "",
+    address: "",
+
+  })
+
+  const handler = (e)=>{
+    setform({...form,
+      [e.target.name]:e.target.value,})
+
+  }
 
 
   return (
@@ -66,8 +118,78 @@ export default function App() {
       {/* <div style={{ padding: "20px", border: "2px solid #333" }}>
         <h2>Main component {user1}</h2>
         <First user1 ={user1}/></div> */}
-        <Caption />
-     
+        {/* <Caption /> */}
+        {/* <div>
+          <Pass.Provider value={{mode,setmode,form,setform,handler}}>
+            <ContextForm />
+            </Pass.Provider>
+          </div> */}
+          {/* <Usereduce /> */}
+          {/* <Minichat /> */}
+          {/* <Chat /> */}
+           {/* <Navbar /> */}
+
+      {/* <Routes>
+
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/account" element={<Account />} />
+
+        {/* Nested Routing */}
+
+        {/* <Route path="/solutions" element={<Solutions />}>
+          <Route path="cloud" element={<CloudService />} />
+          <Route path="cybersecurity" element={<CyberSecurity />} />
+          <Route path="ai" element={<AIService />} />
+        </Route>
+
+      </Routes> */} 
+      <BrowserRouter>
+
+  {/* <div className="header">
+    <Link to={"/Home"}>Home</Link>
+    <Link to={"/About"}>About</Link>
+    <Link to={"/Services"}>Service</Link>
+    <Link to={"/Contact"}>Contact</Link>
+    
+  </div> */}
+
+  <Routes>
+    {/* <Route path='/' element={<Home />} />
+    <Route path='/About' element={<About />} />
+    <Route path='/Home' element={<Home />} />
+    <Route path='/Services' element={<Services />} />
+    <Route path='/App' element={<Appservices />} />
+    <Route path='/Web' element={<Webservice />} />
+    <Route path='/Contact' element={<Contact />} />
+    <Route path='/blog/:id' element={<Blog />}/> */}
+ 
+
+   {/* <Route path="/" element={<UserList />} />
+
+   <Route path="/Home" element={<UserList />} />
+
+   <Route path="/user/:id" element={<UserDetails />} /> */}
+
+
+  </Routes>
+  {/* <UseSerachParam /> */}
+  {/* <Apifetch/> */}
+  {/* <Useexecute/> */}
+ {/* <Axios /> */}
+  {/* <UserTable /> */}
+  {/* <Crud/> */}
+  <ApiCrud />
+  {/* <Pagenation /> */}
+
+</BrowserRouter>
+{/* <Idname />
+<Idname /> */}
+{/* <TaskTwele /> */}
+
+
+          
     </div>
   )
 }
