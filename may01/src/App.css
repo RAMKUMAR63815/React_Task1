@@ -827,7 +827,7 @@ body{
   cursor: pointer; */
 }
 
-.container {
+/* .container {
   width: 90%;
   margin: 30px auto;
   text-align: center;
@@ -882,4 +882,5 @@ tr:nth-child(even) {
 button:disabled {
   background: #ccc;
   cursor: not-allowed;
-}
+} */
+
